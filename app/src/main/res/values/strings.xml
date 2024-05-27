@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Clock</string>
+    <string name="clock">Часы</string>
+    <string name="dialog_title">Новый часовой пояс</string>
+</resources>
