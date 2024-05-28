@@ -27,10 +27,10 @@ class MainViewModel : ViewModel()
     val clockList = mutableStateListOf<Pair<String, ArrowAngles>>()
 
     private fun getHoursAngle(time: LocalTime): Float =
-        time.hour.toFloat() * 30f + mainClock.minute.toFloat() / 2f + mainClock.second.toFloat() / 120f
+        time.hour.toFloat() * 30f + time.minute.toFloat() / 2f + time.second.toFloat() / 120f
 
     private fun getMinutesAngle(time: LocalTime): Float =
-        time.minute.toFloat() * 6f + mainClock.second.toFloat() / 10f
+        time.minute.toFloat() * 6f + time.second.toFloat() / 10f
 
     private fun getSecondsAngle(time: LocalTime): Float =
         time.second.toFloat() * 6f
